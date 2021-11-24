@@ -4,15 +4,16 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-  width: 348px;
+  width: max(84%, 350px);
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 const StyledMap = styled.div`
   height: 300px;
-  width: 390px;
+  width: max(100%, 330px);
+
+  z-index: 100;
 
   margin-bottom: 22px;
   border-radius: 10px;
@@ -20,15 +21,15 @@ const StyledMap = styled.div`
 
 const ContactLink = styled.button`
   height: 40px;
-  width: 200px;
-  border: 0;
+  width: 300px;
+  border: 3px dashed black;
   border-radius: 10px;
   background-color: ${(props) => props.theme.neon};
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0 0 0.8rem 0.8rem;
 
   font-size: ${(props) => props.theme.nm};
-  color: ${(props) => props.theme.bgDark};
+  color: ${(props) => props.theme.dark};
 `;
 
 export default function Contact() {
@@ -76,7 +77,7 @@ export default function Contact() {
       });
 
       const img = document.createElement("img");
-      img.src = "/embeds/dark-logo.png";
+      img.src = "/embeds/location.png";
       img.alt = "Aung Paing's Logo";
 
       img.addEventListener("load", () => map.addImage("paing-logo", img));
@@ -85,10 +86,8 @@ export default function Contact() {
 
   return (
     <StyledContact>
-      <div>
-        <h1>Contact</h1>
-        <StyledMap ref={mapRef}></StyledMap>
-      </div>
+      <h1>Contact</h1>
+      <StyledMap ref={mapRef}></StyledMap>
       <div>
         <h1>On the Web</h1>
         <ContactLink>Gmail</ContactLink>

@@ -1,6 +1,7 @@
 import Experiences from "../../components/Experiences";
 import Work from "../../components/Work";
 
+
 export default function index() {
   const projects = [
     { id: 0, img: "project1.jpg", description: "Automatic Lane Detection" },

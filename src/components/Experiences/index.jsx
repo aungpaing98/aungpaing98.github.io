@@ -4,12 +4,12 @@ import StyledSection from "../../styled/StyledSection";
 import ExCards from "../ExCards";
 
 const StyledExperience = styled.div`
-  width: 325px;
+  width: max(90%, 325px);
   margin: 0 auto;
   padding-top: 22px;
   background-color: ${(props) => props.theme.lightBlue};
   border-radius: 10px;
-  box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 1px ${(props) => props.theme.shadow};
 
   display: flex;
   flex-direction: column;

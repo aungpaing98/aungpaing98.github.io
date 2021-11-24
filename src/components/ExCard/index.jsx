@@ -1,39 +1,40 @@
 import styled from "styled-components";
 
 const StyledExCard = styled.div`
-  width: 290px;
+  width: 88%;
   background-color: ${(props) => props.theme.neon};
   margin-bottom: 22px;
-  border-radius : 10px;
-  
-  p{
-    font-size:16px;
+  border-radius: 10px;
+
+  p {
+    font-size: 16px;
   }
 
-  h3{
-    margin-bottom:0.8rem;
+  h3 {
+    margin-bottom: 0.8rem;
   }
 
   .jobHead {
-    background-color: ${(props) => props.theme.bgDark};
+    background-color: ${(props) => props.theme.dark};
     display: flex;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px 10px 0 0;
 
     * {
-      color: ${(props) => props.theme.bgLight};
+      color: ${(props) => props.theme.light};
     }
 
-    > div{
+    > div {
       min-width: 78px;
     }
   }
 
   .jobBody {
-    padding:22px;
+    padding: 22px 22px 22px 26px;
 
-    li{
+    li {
       margin-bottom: 0.3rem;
+      color: ${(props) => props.theme.dark};
     }
   }
 `;

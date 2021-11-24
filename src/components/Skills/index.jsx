@@ -5,8 +5,10 @@ import SkillBtns from "./SkillBtns";
 
 const StyledSkill = styled.section`
   height: 190px;
+  width: max(84%, 350px);
   display: flex;
 
+  justify-content: space-around;
   align-items: center;
 `;
 

@@ -24,30 +24,31 @@ const skills = {
 
 const StyledSets = styled.div`
   height: 153px;
-  width: 226px;
+  width: max(60%, 226px);
   margin: 0 11px 0 15px;
-  background-color: ${(props) => props.theme.bgLight};
+  background-color: ${(props) => props.theme.light};
 
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  border : 1px solid black;
+  border: 1px solid gray;
+  border-radius:8px;
 `;
 
 const StyledElement = styled.div`
-  margin: 0 8px;
+  height: 30px;
+  margin: 0 4px;
   padding: 0 10px;
   text-align: center;
   background-color: ${(props) => props.theme.lightBlue};
-  height: 30px;
   border-radius: 4px;
 
   font-size: 16px;
   display: flex;
   align-items: center;
 
-  color:${props=>props.theme.bgDark};
+  color: ${(props) => props.theme.dark};
   font-weight: bold;
 `;
 

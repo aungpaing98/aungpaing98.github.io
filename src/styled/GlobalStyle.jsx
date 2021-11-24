@@ -2,14 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     html{
-        background-color: ${(props) =>
-          props.dark ? props.theme.bgDark : props.theme.bgLight};
+        background-color: ${(props) => props.theme.background};
         display:flex;
         justify-content: center;
     }
 
     body{
-        width: 390px;
+        min-width: 390px;
+        width: min(628px, 90vw);
     }
 
     #root{
@@ -24,14 +24,14 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         box-sizing: border-box;
         font-size: ${(props) => props.theme.nm};
-        color: ${(props) =>
-          props.dark ? props.theme.bgLight : props.theme.bgDark};
+        color: ${(props) => props.theme.content};
     }
 
     section{
         min-height:141px;
-        width: 350px;
+        /* width: 350px; */
         margin-bottom: 22px;
+        border-radius: 10px;
         background-color: ${(props) => props.theme.lightBlue};
         box-shadow: ${(props) =>
           props.dark
@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     p, li{
-        color : ${props=>props.theme.bgDark}
+        color : ${(props) => props.theme.background}
     }
 
 `;

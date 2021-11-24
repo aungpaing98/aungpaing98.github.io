@@ -10,7 +10,7 @@ import { Canvas, useFrame, extend, useThree } from "react-three-fiber";
 
 const StyledModel = styled.section`
     height:300px;
-    width: 100%;
+    width: 90%;
 
     margin-top: 0;
 `

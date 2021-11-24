@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledSkillBtns = styled.div`
   height: 148px;
-  width: 84px;
+  width: max(30%, 84px);
 
   div:not(:first-child) {
     margin-top: 17px;
@@ -10,13 +10,13 @@ const StyledSkillBtns = styled.div`
 
   button {
     height: 38px;
-    width: 84px;
+    width: max(90%, 84px);
     background-color: ${(props) => props.theme.neon};
     border-radius: 6px;
-    border: 0;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-    
-    color:${props=>props.theme.bgDark};
+    border: 2px dashed ${(props) => props.theme.dark};
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: ${(props) => props.theme.dark};
   }
 `;
 

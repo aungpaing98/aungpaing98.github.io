@@ -2,11 +2,11 @@ import styled from "styled-components";
 import Card from "../Card";
 
 const StyledCards = styled.div`
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 8px;
-`
+`;
 
 export default function Cards(props) {
   const { projects } = props;
@@ -14,8 +14,10 @@ export default function Cards(props) {
     <StyledCards>
       {projects.map((p) => (
         <Card key={p.id}>
-            <img src={`/embeds/${p.img}`} alt="Project Screenshot" />
+          <img src={`/embeds/${p.img}`} alt="Project Screenshot" />
+          <div>
             <p>{`${p.description}`}</p>
+          </div>
         </Card>
       ))}
     </StyledCards>
