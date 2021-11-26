@@ -27,6 +27,9 @@ const StyledNav = styled.nav`
     background-color: ${(props) => props.theme.content};
     border: 0;
     border-radius: 28px;
+
+    outline : 2px ${props=>props.theme.content} solid;
+    outline-offset: 0.2rem;
   }
 
   img {
@@ -38,6 +41,7 @@ const StyledNav = styled.nav`
     display: flex;
 
     li {
+      margin-left:4px;
       a {
         border-radius: 4px;
         padding: 8px;

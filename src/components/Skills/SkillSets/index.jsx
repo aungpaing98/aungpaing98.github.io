@@ -1,27 +1,5 @@
 import styled from "styled-components";
 
-const skills = {
-  web: [
-    "HTML",
-    "CSS",
-    "React",
-    "Bootstrap",
-    "JavaScript",
-    "Redux",
-    "Framer-Motion",
-  ],
-  ml: [
-    "Python",
-    "Numpy",
-    "Pandas",
-    "Scikit-Learn",
-    "Keras",
-    "Tensorflow",
-    "Pytorch",
-  ],
-  others: ["None"],
-};
-
 const StyledSets = styled.div`
   height: 153px;
   width: max(60%, 226px);
@@ -52,10 +30,11 @@ const StyledElement = styled.div`
   font-weight: bold;
 `;
 
-export default function SkillSets() {
+export default function SkillSets(props) {
+  const {skills} = props
   return (
     <StyledSets>
-      {skills.web.map((skill, index) => (
+      {skills.map((skill, index) => (
         <StyledElement key={index}>{skill}</StyledElement>
       ))}
     </StyledSets>

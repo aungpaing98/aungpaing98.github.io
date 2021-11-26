@@ -8,7 +8,6 @@ export default function Work(props) {
     <>
       <StyledSection>
         <h1>Works</h1>
-        <h2>Algorithms</h2>
         <Cards projects={projects}/>
       </StyledSection>
     </>

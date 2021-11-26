@@ -2,25 +2,21 @@ import styled from "styled-components";
 
 const StyledCard = styled.div`
   height: 156px;
-  width: 156px;
-  background-color: ${(props) => props.theme.lightBlue};
+  min-width: 156px;
   border-radius: 10px;
-  box-shadow: 5px 4px 0px ${props=>props.theme.shadow};
-  display: flex;
-  flex-direction: column;
+  box-shadow: 5px 4px 0px ${(props) => props.theme.shadow};
+  background-image: url("embeds/project1.jpg");
+  background-size: cover;
 
-  img {
-    height: 108px;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+  p {
+    color: black;
   }
 
-  div {
-    height: 48px;
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-    background-color: ${(props) => props.theme.content};
-    color: ${(props) => props.theme.background};
+  :nth-child(1) {
+    grid-column: span 2;
+  }
+  :nth-child(4) {
+    grid-column: span 2;
   }
 `;
 

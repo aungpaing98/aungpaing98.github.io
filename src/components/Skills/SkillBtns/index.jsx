@@ -20,17 +20,23 @@ const StyledSkillBtns = styled.div`
   }
 `;
 
-export default function SkillBtns() {
+export default function SkillBtns(props) {
+  const { setSkill } = props;
+  const handleClick = (skill) => {
+    return () => {
+      setSkill(skill);
+    };
+  };
   return (
     <StyledSkillBtns>
       <div>
-        <button>Web Dev</button>
+        <button onClick={handleClick("web")}>Web Dev</button>
       </div>
       <div>
-        <button>ML And DL</button>
+        <button onClick={handleClick("ml")}>ML And DL</button>
       </div>
       <div>
-        <button>Others</button>
+        <button onClick={handleClick("others")}>Others</button>
       </div>
     </StyledSkillBtns>
   );

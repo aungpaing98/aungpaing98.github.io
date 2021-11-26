@@ -55,5 +55,8 @@ const GlobalStyle = createGlobalStyle`
         color : ${(props) => props.theme.background}
     }
 
+    button{
+        cursor:pointer;
+    }
 `;
 export default GlobalStyle;

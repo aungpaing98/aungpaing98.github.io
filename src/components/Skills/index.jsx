@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 import SkillSets from "./SkillSets";
@@ -12,11 +13,34 @@ const StyledSkill = styled.section`
   align-items: center;
 `;
 
+const skills = {
+  web: [
+    "HTML",
+    "CSS",
+    "React",
+    "Bootstrap",
+    "JavaScript",
+    "Redux",
+    "Framer-Motion",
+  ],
+  ml: [
+    "Python",
+    "Numpy",
+    "Pandas",
+    "Scikit-Learn",
+    "Keras",
+    "Tensorflow",
+    "Pytorch",
+  ],
+  others: ["Blender", "English", "Chinese", "Burmese", "Basketball", "Jogging"],
+};
+
 export default function Skills() {
+  const [skill, setSkill] = useState('web')
   return (
     <StyledSkill>
-      <SkillSets />
-      <SkillBtns />
+      <SkillSets skills={skills[skill]}/>
+      <SkillBtns setSkill={setSkill} />
     </StyledSkill>
   );
 }

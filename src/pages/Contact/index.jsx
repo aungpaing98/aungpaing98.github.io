@@ -2,11 +2,16 @@ import React, { useEffect, useRef } from "react";
 import MapboxGl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import styled from "styled-components";
+import StyledSection from "../../styled/StyledSection";
 
 const StyledContact = styled.div`
   width: max(84%, 350px);
   display: flex;
   flex-direction: column;
+
+  h1 {
+    margin-top: 0.8rem;
+  }
 `;
 
 const StyledMap = styled.div`
@@ -20,16 +25,21 @@ const StyledMap = styled.div`
 `;
 
 const ContactLink = styled.button`
-  height: 40px;
+  height: 60px;
   width: 300px;
-  border: 3px dashed black;
+  border: 2px dashed black;
   border-radius: 10px;
   background-color: ${(props) => props.theme.neon};
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 0px ${(props) => props.theme.shadow};
   margin: 0 0 0.8rem 0.8rem;
 
   font-size: ${(props) => props.theme.nm};
   color: ${(props) => props.theme.dark};
+
+  a {
+    font-weight: bold;
+    color: ${(props) => props.theme.dark};
+  }
 `;
 
 export default function Contact() {
@@ -42,7 +52,7 @@ export default function Contact() {
     const map = new MapboxGl.Map({
       container: mapRef.current,
       style: "mapbox://styles/aung-paing/ckwa3ldy17dr916mpsgyct1v1",
-      center: [96.11218571662903, 21.934148530329352],
+      center: [96.09218571662913, 21.934148530329352],
       zoom: 12,
     });
 
@@ -72,7 +82,7 @@ export default function Contact() {
         type: "symbol",
         layout: {
           "icon-image": "paing-logo",
-          "icon-size": 0.15,
+          "icon-size": 0.2,
         },
       });
 
@@ -88,13 +98,39 @@ export default function Contact() {
     <StyledContact>
       <h1>Contact</h1>
       <StyledMap ref={mapRef}></StyledMap>
-      <div>
+      <StyledSection>
         <h1>On the Web</h1>
-        <ContactLink>Gmail</ContactLink>
-        <ContactLink>LinkedIn</ContactLink>
-        <ContactLink>Github</ContactLink>
-        <ContactLink>Facebook</ContactLink>
-      </div>
+        <ContactLink>
+          <a href="mailto:aungpaingcha1@gmail.com">Gmail</a>
+        </ContactLink>
+        <ContactLink>
+          <a
+            href="https://www.linkedin.com/in/aungpaing98/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </ContactLink>
+        <ContactLink>
+          <a
+            href="http://aungpaing98.github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </ContactLink>
+        <ContactLink>
+          <a
+            href="https://www.facebook.com/aung.paing.jj.986"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </ContactLink>
+      </StyledSection>
     </StyledContact>
   );
 }

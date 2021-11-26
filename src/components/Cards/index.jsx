@@ -2,10 +2,22 @@ import styled from "styled-components";
 import Card from "../Card";
 
 const StyledCards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 60ch) and (any-hover: none) and (any-pointer: coarse) {
+    grid-auto-flow: column;
+    grid-template-columns: unset;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1.25rem;
+
+    div {
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
+    }
+  }
 `;
 
 export default function Cards(props) {
@@ -13,11 +25,8 @@ export default function Cards(props) {
   return (
     <StyledCards>
       {projects.map((p) => (
-        <Card key={p.id}>
-          <img src={`/embeds/${p.img}`} alt="Project Screenshot" />
-          <div>
-            <p>{`${p.description}`}</p>
-          </div>
+        <Card key={p.id} src={p.img}>
+          <p>{`${p.description}`}</p>
         </Card>
       ))}
     </StyledCards>
