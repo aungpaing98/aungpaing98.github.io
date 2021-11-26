@@ -11,7 +11,18 @@ export default function index() {
   ];
   const experiences = [
     {
-      id: "e1",
+      id: "e4",
+      startDate: "2021-10",
+      endDate: "Present",
+      title: "Lecturer for Software Development",
+      company: "Lattwae Education",
+      description: [
+        "Engage with up to 20 students in person.",
+        "Share information about modern web technology, programming language, machine learning and deep learning.",
+      ],
+    },
+    {
+      id: "e3",
       startDate: "2021-01",
       endDate: "2021-05",
       title: "Junior Machine Learning Engineer",
@@ -34,7 +45,7 @@ export default function index() {
       ],
     },
     {
-      id: "e3",
+      id: "e1",
       startDate: "2019-12-",
       endDate: "2020-02",
       title: "Machine Learning Internship",

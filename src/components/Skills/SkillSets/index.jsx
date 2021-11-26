@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-const StyledSets = styled.div`
+const StyledSets = styled(motion.div)`
   height: 153px;
   width: max(60%, 226px);
   margin: 0 11px 0 15px;
@@ -11,7 +12,7 @@ const StyledSets = styled.div`
   justify-content: flex-start;
   align-items: center;
   border: 1px solid gray;
-  border-radius:8px;
+  border-radius: 8px;
 `;
 
 const StyledElement = styled.div`
@@ -31,7 +32,7 @@ const StyledElement = styled.div`
 `;
 
 export default function SkillSets(props) {
-  const {skills} = props
+  const { skills } = props;
   return (
     <StyledSets>
       {skills.map((skill, index) => (

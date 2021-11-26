@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const StyledNav = styled.nav`
   width: 84%;
@@ -15,7 +16,7 @@ const StyledNav = styled.nav`
   z-index: 1;
 
   div {
-    width: 20ch;
+    min-width: 22ch;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +29,7 @@ const StyledNav = styled.nav`
     border: 0;
     border-radius: 28px;
 
-    outline : 2px ${props=>props.theme.content} solid;
+    outline: 2px ${(props) => props.theme.content} solid;
     outline-offset: 0.2rem;
   }
 
@@ -41,7 +42,7 @@ const StyledNav = styled.nav`
     display: flex;
 
     li {
-      margin-left:4px;
+      margin-left: 4px;
       a {
         border-radius: 4px;
         padding: 8px;
@@ -61,25 +62,24 @@ export default function NavBar(props) {
   };
   return (
     <StyledNav>
+      <Link to="/">
+        <motion.img
+          whileHover={{ scale: 1.1, rotate:20 }}
+          src={`${
+            props.dark ? "/embeds/dark-logo.png" : "/embeds/light-logo.png"
+          }`}
+          alt="Aung Paing's Logo"
+        />
+      </Link>
       <div>
-        <Link to="/">
-          <img
-            src={`${
-              props.dark ? "/embeds/dark-logo.png" : "/embeds/light-logo.png"
-            }`}
-            alt="Aung Paing's Logo"
-          />
-        </Link>
-      </div>
-      <div>
-        <ul>
-          <li>
+        <motion.ul>
+          <motion.li whileHover={{ scale: 1.1, rotate: 10 }}>
             <NavLink to="/works">Works</NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{ scale: 1.1, rotate: 10 }}>
             <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
         <button onClick={changeTheme}></button>
       </div>
     </StyledNav>

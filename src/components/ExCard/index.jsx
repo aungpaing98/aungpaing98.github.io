@@ -56,8 +56,8 @@ export default function ExCard(props) {
       </div>
       <div className="jobBody">
         <ul>
-          {exp.description.map((d) => (
-            <li>{d}</li>
+          {exp.description.map((d, i) => (
+            <li key={`${i}_card_`}>{d}</li>
           ))}
         </ul>
       </div>

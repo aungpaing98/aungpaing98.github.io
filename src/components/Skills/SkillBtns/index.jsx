@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-const StyledSkillBtns = styled.div`
+const StyledSkillBtns = styled(motion.div)`
   height: 148px;
   width: max(30%, 84px);
 

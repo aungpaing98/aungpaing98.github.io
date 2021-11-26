@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import styled from "styled-components"
+import styled from "styled-components";
 import { useState, useRef, useEffect } from "react";
 
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
@@ -7,14 +7,14 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 import { Canvas, useFrame, extend, useThree } from "react-three-fiber";
 
+import Spinner from "../Spinner";
 
 const StyledModel = styled.section`
-    height:300px;
-    width: 90%;
+  height: 300px;
+  width: 90%;
 
-    margin-top: 0;
-`
-
+  margin-top: 0;
+`;
 
 const Controls = () => {
   extend({ OrbitControls });
@@ -30,7 +30,7 @@ const Controls = () => {
 };
 
 const SpaceModel = () => {
-  const [model, setModel] = useState();
+  const [model, setModel] = useState(null);
   useEffect(() => {
     new GLTFLoader().load("./scene.gltf", setModel);
   }, []);
@@ -41,7 +41,7 @@ export default function Model() {
   return (
     <StyledModel>
       <Canvas
-        camera={{position:[0, 200, 300]}}
+        camera={{ position: [0, 200, 300] }}
         colorManagement
         onCreated={({ gl }) => {
           gl.shadowMap.enabled = true;

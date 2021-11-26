@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
 import { Route, Switch, Redirect } from "react-router";
+import { ThemeProvider } from "styled-components";
 
 import GlobalStyle from "./styled/GlobalStyle";
 
@@ -45,15 +45,15 @@ export default function App() {
   const [dark, setDark] = useState(true);
   return (
     <ThemeProvider theme={dark ? theme.dark : theme.light}>
-      <GlobalStyle dark={dark} />
-      <NavBar dark={dark} setDark={setDark} />
-      <Switch>
-        <Route path="/works" component={Works} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/" component={Home} />
-        <Redirect to="/" />
-      </Switch>
-      <Footer dark={dark} />
+        <GlobalStyle dark={dark} />
+        <NavBar dark={dark} setDark={setDark} />
+        <Switch>
+          <Route path="/works" component={Works} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/" component={Home} />
+          <Redirect to="/" />
+        </Switch>
+        <Footer dark={dark} />
     </ThemeProvider>
   );
 }

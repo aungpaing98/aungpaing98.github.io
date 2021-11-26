@@ -1,22 +1,24 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-const StyledHero = styled.section`
+import containerAnimation from '../../animation/containerAnimation'
+
+const StyledHero = styled(motion.section)`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width:max(84%, 350px);
+  width: max(84%, 350px);
 
   img {
     height: 100px;
     width: 100px;
     border: 3px solid black;
     border-radius: 100px;
-    /* margin: 0 19px 0 15px; */
   }
 
   h1 {
     font-size: ${(props) => props.theme.xl};
-    color : ${props=>props.theme.dark}
+    color: ${(props) => props.theme.dark};
   }
   h2 {
     font-size: ${(props) => props.theme.lg};
@@ -26,7 +28,14 @@ const StyledHero = styled.section`
 
 export default function Hero() {
   return (
-    <StyledHero>
+    <StyledHero
+      key="hero"
+      initial="hidden"
+      animate="animate"
+      transition="transition"
+      exit="exit"
+      variants={containerAnimation}
+    >
       <div>
         <img src="/embeds/profile.jpeg" alt="Aung Paing's Portrait" />
       </div>
