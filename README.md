@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+## မဂၤလာပါ။ I'm Paing<img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I am Aung Paing, final year B.E Mechatronic at Yangon Technological University.
 
-## Available Scripts
+- 🔭 Currently as the Teaching Assistance in Computer Vision and Machine Learning lab in Yangon Technological Unversity.
+- 👯 Looking to collaborate on Computer Vision Projects.
+- 💻 Currently learning everything.
 
-In the project directory, you can run:
 
-### `npm start`
+:mailbox: You can reach me on:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[![Linkedin Badge](https://img.shields.io/badge/-Paing-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aungpaing98/) [![Mail Badge](https://img.shields.io/badge/-aungpaing-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:aungpaingcha1@gmail.com) [![Facebook Badge](https://img.shields.io/badge/-Paing-blue?style=flat&labelColor=blue&logo=facebook&logoColor=white)](https://www.facebook.com/aung.paing.jj.986) [![Youtube Badge](https://img.shields.io/badge/-Paing-c0392b?style=flat&labelColor=c0392b&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC6Vhf_yoIWXiLLJqTrU0FWA)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### Top technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![Python Badge](https://img.shields.io/badge/-Python-white?style=for-the-badge&labelColor=black&logo=python&logoColor=white)](#)
+[![Markdown Badge](https://img.shields.io/badge/-Markdown-white?style=for-the-badge&labelColor=black&logo=markdown&logoColor=white)](#)
+[![Keras Badge](https://img.shields.io/badge/-Keras-c20808?style=for-the-badge&labelColor=black&logo=keras&logoColor=c20808)](#) [![Pytorch Badge](https://img.shields.io/badge/-Pytorch-ed4b2b?style=for-the-badge&labelColor=black&logo=pytorch&logoColor=ed4b2b)](#)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Blogging
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![Blogging Badge](https://img.shields.io/badge/-blogs-blue?style=for-the-badge&labelColor=black)](https://aungpaing98.github.io/blogs/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Profile Visits
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![visitors](https://visitor-badge.glitch.me/badge?page_id=aunpaing98.aungpaing98)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Github Stats
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Aung Paing's github stats](https://github-readme-stats.vercel.app/api?username=aungpaing98&count_private=false&theme=tokyonight&hide=contribs,prs)
