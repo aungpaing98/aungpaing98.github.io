@@ -58,7 +58,7 @@ export default function index() {
   ];
   return (
     <>
-      <Work projects={projects} />
+      {/* <Work projects={projects} /> */}
       <Experiences experiences={experiences} />
     </>
   );
